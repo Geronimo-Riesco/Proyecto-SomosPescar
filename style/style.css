@@ -25,6 +25,22 @@ body {
   letter-spacing: 2px;
 }
 
+/* ScrollBar */
+
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-box-shadow);
+  border-radius: 15px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--color-orange1);
+  border-radius: 16px;
+}
+
 /* CADA ETIQUETA DEL MENU LAS QUIERO CON COLOR BLANCO*/
 a {
   color: var(--color-black);
