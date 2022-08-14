@@ -742,6 +742,20 @@ STYLE Cursor-Custom
     grid-auto-flow: row;
   }
 
+  #titulo-companias {
+    font-size: 1.2em;
+    margin-bottom: 15px;
+  }
+
+  .companias-asociadas {
+    margin-top: 110px;
+    margin-bottom: 110px;
+  }
+
+  .companias-asociadas img {
+    width: 90%;
+  }
+
   .contact-details {
     gap: 45px;
   }
