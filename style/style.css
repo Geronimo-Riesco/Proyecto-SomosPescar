@@ -112,6 +112,10 @@ ul {
   gap: 150px;
 }
 
+.home-pescador-mobile {
+  display: none;
+}
+
 #intro p {
   text-align: center;
 }
@@ -419,84 +423,26 @@ div .light-box {
   background-color: var(--color-orange1);
 }
 
-/* -------------------------------------- MOVÍL RESPONSIVE 400px -------------------------------------- */
-@media (max-width: 400px) {
-  .cursor {
-    display: none;
-  }
-
-  .menu-btn {
-    color: var(--color-blue);
-    display: block;
-  }
-
-  /* LE DOY UN EFECTO A MI BOTÓN MENÚ */
-  .menu-btn:hover {
-    opacity: 0.5;
-  }
-
-  .nav-bar ul li a {
-    color: var(--color-white);
-  }
-
-  .nav-bar ul li a:hover {
-    border-bottom: 2px solid var(--color-orange1);
-    color: var(--color-orange1);
-  }
-
-  /* MEJORO MI NAVEGACION EN EL MENÚ */
-  .nav-bar ul.nav-menu {
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background: var(--color-blue);
-    height: 100%;
-    padding: 20px 0px 0px 10px;
-    border-right: var(--color-orange1) 1px solid;
-    opacity: 0.9;
-    transform: translateX(-400px);
-    transition: transform 0.5s ease-in-out;
-  }
-
-  /* CORRIGO MI LETRA Y TAMAÑO DEL MENÚ */
-  .nav-bar ul.nav-menu li {
-    padding: 20px;
-    font-size: 15px;
-  }
-
-  /* QUE SE AMPLIE MI MENÚ CON LA ITERACCIÓN CON JS */
-  .nav-bar ul.nav-menu.show {
-    transform: translateX(-20px);
-  }
-
-  /* SEPARO MI LUPA DEL ICONO MENÚ */
-  .nav-bar ul.nav-menu-right {
-    margin-left: 36rem;
-  }
-
-  .home-icono {
-    display: none;
-  }
-
-  .home-pescador {
-    width: 500px;
-    margin-right: 95px;
-  }
-
-  .experiencias {
-    display: grid;
-    grid-auto-flow: row;
-  }
-
-  .contact-details {
-    gap: 45px;
-  }
-}
-
 /********************************************
 STYLE LaBeca
 *********************************************/
+
+/* ----------------------------------------- HOME -------------------------------------------------- */
+
+#home-LaBeca {
+  display: flex;
+  justify-content: center;
+}
+
+.img-roadmap {
+  width: 85%;
+}
+
+.img-roadmap-mobile {
+  display: none;
+}
+
+/* ------------------------------------------- ACORDEON -------------------------------------------- */
 
 * {
   -moz-box-sizing: border-box;
@@ -715,4 +661,103 @@ STYLE Cursor-Custom
   width: 30px;
   height: 30px;
   opacity: 0.4;
+}
+
+/* -------------------------------------- MOVÍL RESPONSIVE 400px -------------------------------------- */
+@media (max-width: 400px) {
+  .cursor {
+    display: none;
+  }
+
+  .menu-btn {
+    color: var(--color-blue);
+    display: block;
+  }
+
+  /* LE DOY UN EFECTO A MI BOTÓN MENÚ */
+  .menu-btn:hover {
+    opacity: 0.5;
+  }
+
+  .nav-bar ul li a {
+    color: var(--color-white);
+  }
+
+  .nav-bar ul li a:hover {
+    border-bottom: 2px solid var(--color-orange1);
+    color: var(--color-orange1);
+  }
+
+  /* MEJORO MI NAVEGACION EN EL MENÚ */
+  .nav-bar ul.nav-menu {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: var(--color-blue);
+    height: 100%;
+    padding: 20px 0px 0px 10px;
+    border-right: var(--color-orange1) 1px solid;
+    opacity: 0.9;
+    transform: translateX(-400px);
+    transition: transform 0.5s ease-in-out;
+  }
+
+  /* CORRIGO MI LETRA Y TAMAÑO DEL MENÚ */
+  .nav-bar ul.nav-menu li {
+    padding: 20px;
+    font-size: 15px;
+  }
+
+  /* QUE SE AMPLIE MI MENÚ CON LA ITERACCIÓN CON JS */
+  .nav-bar ul.nav-menu.show {
+    transform: translateX(-20px);
+  }
+
+  /* SEPARO MI LUPA DEL ICONO MENÚ */
+  .nav-bar ul.nav-menu-right {
+    margin-left: 36rem;
+  }
+
+  #home {
+    height: 460px;
+    margin: auto;
+  }
+
+  .home-icono {
+    display: none;
+  }
+
+  .home-pescador {
+    display: none;
+  }
+
+  .home-pescador-mobile {
+    display: flex;
+    width: 334px;
+  }
+
+  .experiencias {
+    display: grid;
+    grid-auto-flow: row;
+  }
+
+  .contact-details {
+    gap: 45px;
+  }
+
+  /********************************************
+  STYLE LaBeca
+  *********************************************/
+
+  /* ------------------------ HOME -------------------------- */
+
+  .img-roadmap {
+    display: none;
+  }
+
+  .img-roadmap-mobile {
+    display: flex;
+    width: 99%;
+  }
 }
