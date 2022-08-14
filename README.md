@@ -1,12 +1,14 @@
 ## Proyecto-SomosPescar
 
-#### `Intregrantes`: 
+#### `Intregrantes`:
+
 - Nayla Bechara
 - Ezequiel Villalba
 - Mauro Benitez
 - Iván Caravajal
 - Belen Jessikowski
 - Gerónimo Riesco
+- Abraham Trenyan
 
 ###### Proyecto final by Fundación Pescar
 
