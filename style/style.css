@@ -379,7 +379,7 @@ a {
 }
 .testimonial-box {
   width: 800px;
-  box-shadow: 2px 2px 30px var(--color-box-shadow);
+  box-shadow: 2px 2px 12px var(--color-box-shadow);
   background-color: var(--color-lightgray);
   padding: 20px;
   margin: 15px;
