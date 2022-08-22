@@ -317,6 +317,8 @@ ul {
   -ms-transition: opacity 1s;
   -o-transition: opacity 1s;
   transition: opacity 1s;
+  z-index: -1;
+  opacity: 0;
 }
 
 #container-slider .arrowPrev,
@@ -379,7 +381,7 @@ a {
 }
 .testimonial-box {
   width: 800px;
-  box-shadow: 2px 2px 12px var(--color-box-shadow);
+  box-shadow: 2px 2px 20px var(--color-box-shadow);
   background-color: var(--color-lightgray);
   padding: 20px;
   margin: 15px;
