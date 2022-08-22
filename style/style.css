@@ -13,7 +13,9 @@
   --color-purple: #6b4060;
   --color-orange1: #fb7304;
   --color-orange2: rgb(255, 141, 65);
+  --color-orange3: #ff3450;
   --color-blue: #1f2d8d;
+  --color-lightgray: #eee;
   --color-darkgray: rgb(83, 83, 83);
   --color-box-shadow: rgba(0, 0, 0, 0.1);
 }
@@ -276,19 +278,158 @@ ul {
 }
 
 /* ----------------- EXPERIENCIAS --------------------------------------------------------------- */
-.experiencias {
+
+/*Carrusel*/
+
+.experiencias-container {
   display: flex;
+  justify-content: center;
 }
 
-.experiencia {
-  display: flex;
-  width: 50%;
-  padding: 2em;
+#experiencias {
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 500;
+  background: linear-gradient(to bottom, #ff850a, #ff3450);
+  color: #ffffff;
+  padding: 10px 20px;
 }
-.experiencia img {
-  width: 80px;
-  height: 80px;
-  margin-right: 1em;
+
+#container-slider {
+  width: 100%;
+}
+
+#slider {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  min-height: 355px;
+}
+
+#slider li {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: block;
+  -webkit-transition: opacity 1s;
+  -moz-transition: opacity 1s;
+  -ms-transition: opacity 1s;
+  -o-transition: opacity 1s;
+  transition: opacity 1s;
+}
+
+#container-slider .arrowPrev,
+#container-slider .arrowNext {
+  font-size: 25pt;
+  color: var(--color-darkgray);
+  cursor: pointer;
+  position: absolute;
+  margin-top: 130px;
+  z-index: 2;
+}
+
+#container-slider .arrowPrev {
+  left: 10%;
+}
+
+#container-slider .arrowNext {
+  right: 10%;
+}
+
+.listslider {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  left: 50%;
+  margin-top: 320px;
+  list-style: none;
+  transform: translateX(-50%);
+}
+.listslider li {
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  margin: 0 5px;
+}
+.listslider li a {
+  background: var(--color-darkgray);
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.item-select-slid {
+  background: linear-gradient(to bottom, #ff850a, #ff3450) !important;
+}
+
+/*Experiencias-Relatos*/
+
+a {
+  text-decoration: none;
+}
+
+.testimonial-box-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 90%;
+}
+.testimonial-box {
+  width: 800px;
+  box-shadow: 2px 2px 30px var(--color-box-shadow);
+  background-color: var(--color-lightgray);
+  padding: 20px;
+  margin: 15px;
+  cursor: pointer;
+}
+.profile-img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 10px;
+}
+.profile-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+}
+.profile {
+  display: flex;
+  align-items: center;
+}
+.name-user {
+  display: flex;
+  flex-direction: column;
+}
+.name-user strong {
+  color: var(--color-darkgray);
+  font-size: 1.1rem;
+  letter-spacing: 0.5px;
+}
+.name-user span {
+  color: #979797;
+  font-size: 0.8rem;
+  margin-top: 5px;
+  letter-spacing: 1px;
+}
+.box-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.client-comment p {
+  font-size: 0.9rem;
+  color: var(--color-darkgray);
+}
+.testimonial-box:hover {
+  transform: translateY(-10px);
+  transition: all ease 0.3s;
 }
 
 /* ---------------- COMPANIAS --------------------------------------------------------------- */
@@ -738,11 +879,6 @@ STYLE Cursor-Custom
     width: 334px;
   }
 
-  .experiencias {
-    display: grid;
-    grid-auto-flow: row;
-  }
-
   #titulo-companias {
     font-size: 1.2em;
     margin-bottom: 15px;
@@ -755,6 +891,44 @@ STYLE Cursor-Custom
 
   .companias-asociadas img {
     width: 90%;
+  }
+
+  #experiencias {
+    font-size: 1.5rem;
+  }
+
+  #slider {
+    min-height: 400px;
+  }
+
+  #container-slider .arrowPrev,
+  #container-slider .arrowNext {
+    font-size: 20pt;
+    margin-top: 250px;
+  }
+  #container-slider .arrowPrev {
+    left: 15px;
+  }
+  #container-slider .arrowNext {
+    right: 15px;
+  }
+
+  .listslider {
+    margin-top: 515px;
+  }
+
+  .testimonial-box {
+    padding: 25px;
+    margin: 65px;
+  }
+
+  .box-top {
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+  }
+
+  #button-pescar {
+    margin-top: 255px;
   }
 
   .contact-details {
