@@ -881,6 +881,14 @@ STYLE Cursor-Custom
     width: 334px;
   }
 
+  .card .card__overlay {
+    transform: translateY(0);
+  }
+
+  .card .card__header {
+    transform: translateY(0);
+  }
+
   #titulo-companias {
     font-size: 1.2em;
     margin-bottom: 15px;
