@@ -1,7 +1,7 @@
 ## Proyecto-SomosPescar
 
 #### `Intregrantes`:
-
+```
 - Nayla Bechara
 - Ezequiel Villalba
 - Mauro Benitez
@@ -9,6 +9,7 @@
 - Belen Jessikowski
 - Gerónimo Riesco
 - Abraham Trenyan
+```
 
 ###### Link: https://geronimo-riesco.github.io/Proyecto-SomosPescar/
 
