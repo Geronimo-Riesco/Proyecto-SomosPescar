@@ -454,12 +454,6 @@ a {
 
 /* -------------------------------------- FUNDACION PESCAR BOTÓN -------------------------------------- */
 
-/* CENTRO LA CAJA FUNDACION PESCAR */
-#button-pescar {
-  text-align: center;
-  margin: 120px 0px 120px 0px;
-}
-
 /* CRÉO LOS BORDES DEL BOTÓN */
 .pescar-btn {
   padding: 25px 40px;
@@ -935,10 +929,6 @@ STYLE Cursor-Custom
   .box-top {
     flex-wrap: wrap;
     margin-bottom: 15px;
-  }
-
-  #button-pescar {
-    margin-top: 255px;
   }
 
   .contact-details {
