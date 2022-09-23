@@ -288,9 +288,9 @@ ul {
 
 #experiencias {
   text-align: center;
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   font-weight: 500;
-  background: linear-gradient(to bottom, #ff850a, #ff3450);
+  background-color: var(--color-orange2);
   color: #ffffff;
   padding: 10px 20px;
 }
