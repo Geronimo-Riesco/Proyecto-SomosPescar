@@ -1320,8 +1320,35 @@ STYLE Cursor-Custom
   width: 100%;
 }
 
+/* *********************AGRADECIMIENTOS **************************** */
+
+#main-agr {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  margin: 100px 0;
+}
+.div-agr {
+  margin: 50px;
+  width: 500px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.div-agr img {
+  width: 300px;
+  margin: auto;
+}
+
 /* -------------------------------------- MOVÍL RESPONSIVE 400px -------------------------------------- */
 @media (max-width: 400px) {
+  /* --------------------- AGRADECIMIENTOS --------------------- */
+  .div-agr {
+    margin: 50px 0;
+  }
 
   /* -------------------- Desarrolladores --------------------- */
   .first_information-section {
