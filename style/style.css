@@ -493,6 +493,11 @@ a {
   text-align: center;
 }
 
+#web-pescar{
+  display: flex;
+  justify-content: center;
+}
+
 div .light-box {
   width: auto;
 }
@@ -548,9 +553,18 @@ div .light-box {
 }
 
 /* EFECTO PARA CUANDO PASAS EL MOUSE ENCIMA DE LOS ICONOS FOLLOW @FundaciónPescar */
-.links a i:hover {
-  color: var(--color-orange1);
+#facebook i:hover {
+  color: #3b5998;
 }
+
+#twitter i:hover {
+  color: #00acee;
+}
+
+#linkedin i:hover {
+  color: #0e76a8;
+}
+
 
 /* -------------------------- FOOTER Centro Pescar "Paths to the Future" ------------------------------ */
 
