@@ -130,7 +130,7 @@ let mjson = {
       apellido: "Caravajal",
       github: "https://github.com/IvanGCGH",
       linkedin: "https://www.linkedin.com/in/ivan-gabriel-caravajal",
-      foto: "../img/individuales/carabajal.jpg",
+      foto: "../img/individuales/caravajal.jpg",
     },
     {
       nombre: "Celina",
