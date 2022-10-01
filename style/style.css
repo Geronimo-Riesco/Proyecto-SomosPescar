@@ -1487,6 +1487,87 @@ STYLE Cursor-Custom
     width: 100%;
   }
 }
+  /* ----------------COMO INGRESAR ------------------------*/
+
+#bodyCI {
+  overflow-x: visible;
+}
+
+  /* #ci-section {
+    display: flex;
+  }
+  
+  #ci-preguntas {
+   width: 30%;
+   margin: 50px;
+   text-align: center;
+  } */
+  #ci-perfil { 
+    background-color: #ececec;
+    padding: 30px;
+    margin:20px 0;
+  }
+  
+.img-ci-perfil {
+  width: 70%;
+  border-radius: 50%;
+}
+
+#hombreCV {
+  opacity: 0;
+}
+
+#hombreCV:hover {
+  opacity: 100%;
+  transition: all 0.3s;
+}
+@media (max-width:1079.9px) {
+  /* #hombreCV {
+    position:absolute;
+    left:0px;
+  } */
+
+  .img-ci-perfil {
+    display: none;
+  }
+}
+  @media (min-width: 1080px) {
+    .img-ci-perfil {
+      
+      position: absolute;
+      top: 140px;
+      right: 40px;
+    }
+    
+    .img-ci-perfil {
+      width: 200px;
+    }
+
+
+    .ci-preg-title {
+      margin: 40px;
+      color:rgb(255, 141, 65);
+      font-size: 22px;
+      font-weight: 900;
+    }
+    
+    #ci-requisitos {
+      margin: 40px 400px 40px 40px;
+    }
+  }
+
+
+
+
+  
+  #ci-requisitos h2 {
+    font-size: 32px;
+    margin: 40px 0;
+  }
+  
+  #ci-requisitos h4 {
+    margin: 50px 0;
+  }
 
 /* -------------------------------------- MOVÍL RESPONSIVE 400px -------------------------------------- */
 @media (max-width: 400px) {
@@ -1546,6 +1627,8 @@ STYLE Cursor-Custom
     width: 230px;
     height: 230px;
   }
+
+
 
   /* ------------------- Nuestro Grupo ------------------------- */
   .conteiner-cards {
