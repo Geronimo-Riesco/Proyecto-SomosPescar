@@ -1765,6 +1765,56 @@ STYLE Cursor-Custom
     display: flex;
     width: 99%;
   }
+
+  /* ------------------------ HOME CARDS RESPONSIVE -------------------------- */
+
+  .cards{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .card{
+    height: 580px;
+    width: 320px;
+  }
+
+  .card .card__title{
+    font-size: 1.05rem;
+  }
+
+  .card__overlay{
+    height: 380px;
+  }
+
+  .card1{
+    height: 500px;
+  }
+
+  .card1 .card__overlay{
+    height: 320px;
+  }
+
+  .card1 .card__header{
+    height: 90px;
+  }
+
+  .card1 .card__title{
+    margin-top: -20px;
+  }
+
+  .card1 .card__description{
+    margin-bottom: 20px;
+  }
+
+  .card3 .card__title{
+    margin-top: 25px;
+  }
+
+  .card3 .card__description{
+    margin-top: 20px;
+  }
 }
 
 /* Dropdown */
