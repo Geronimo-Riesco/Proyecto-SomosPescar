@@ -149,6 +149,7 @@ ul {
   margin: 4rem 5vw;
   padding: 0;
   list-style-type: none;
+  margin: 10px -10px;
 }
 
 .card {
@@ -158,11 +159,12 @@ ul {
   border-radius: calc(var(--curve) * 1px);
   overflow: hidden;
   text-decoration: none;
+  width: 390px;
+  height: 305px;
 }
 
 .card__image {
   width: 100%;
-  height: auto;
 }
 
 .card__overlay {
@@ -174,7 +176,7 @@ ul {
   border-radius: calc(var(--curve) * 1px);
   background-color: var(--color-orange1);
   transform: translateY(100%);
-  transition: 0.2s ease-in-out;
+  transition: .2s ease-in-out;
 }
 
 .card:hover .card__overlay {
@@ -182,42 +184,30 @@ ul {
 }
 
 .card__header {
+  height: 90px;
   position: relative;
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 2em;
   padding: 2em;
   border-radius: calc(var(--curve) * 1px) 0 0 0;
   background-color: var(--color-orange1);
   transform: translateY(-100%);
-  transition: 0.2s ease-in-out;
-}
-
-.card__arc {
-  width: 80px;
-  height: 150px;
-  position: absolute;
-  bottom: 100%;
-  right: 0;
-  z-index: 1;
+  transition: .2s ease-in-out;
 }
 
 .card:hover .card__header {
   transform: translateY(0);
 }
 
-.card__thumb {
-  flex-shrink: 0;
-  width: 50px;
-  height: 150px;
-  border-radius: 50%;
+.card__title {
+  font-size: 1rem;
+  margin: 0 0 .3em;
+  color: var(--color-white);
+  text-align: center;
 }
 
-.card__title {
-  font-size: 1em;
-  margin: 0 0 0.3em;
-  color: var(--color-white);
-}
 
 .card__description {
   padding: 0 2em 2em;
@@ -228,6 +218,27 @@ ul {
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 3;
   overflow: hidden;
+  height: 160px;
+  overflow: visible;
+  text-align: center;
+}
+
+.card1 .card__description{
+  font-size: 1rem;
+}
+
+.card2 .card__description{
+  font-size: 0.9rem;
+}
+
+.card3 .card__description{
+  font-size: 0.87rem;
+}
+
+.card1:hover .card__overlay,
+.card2:hover .card__overlay,
+.card3:hover .card__overlay{
+  height: 100%;
 }
 
 /* ----------------- SCROLL FOTOS --------------------------------------------------------------- */
