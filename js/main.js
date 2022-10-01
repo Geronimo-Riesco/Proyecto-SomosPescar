@@ -303,7 +303,7 @@ function returnCards(jason, clase) {
       (valuesCard, index) => `
     <div class=\"card-grupo  ${clase}\">
     <div class="imgBx">
-    <img src= ${valuesCard.foto} alt="Homero Simpson" />
+    <img src= ${valuesCard.foto} alt="${valuesCard.nombre}" />
     </div>
     <div class="content">
       <div class="details">
