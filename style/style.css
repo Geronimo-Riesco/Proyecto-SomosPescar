@@ -1866,6 +1866,7 @@ STYLE Cursor-Custom
   .card{
     height: 580px;
     width: 320px;
+    margin-bottom: 20px;
   }
 
   .card .card__title{
@@ -1965,4 +1966,23 @@ STYLE Cursor-Custom
 
 .dropdown:hover .dropdown-content {
   display: block;
+}
+
+@media (max-width: 400px) {
+  .dropdown .dropbtn{
+    color: var(--color-white);
+    font-size: 15px;
+    font-family: "Montserrat", sans-serif;
+    letter-spacing: 2px;
+  }
+  
+  .dropdown-content{
+    background-color: var(--color-orange1);
+  }
+
+  #li_dropdown{
+    padding-top: 10px;
+    padding-bottom: 30px;
+    padding-left: 17px;
+  }
 }
