@@ -1368,6 +1368,7 @@ STYLE Cursor-Custom
 }
 
 /* RESPONSIVE DE DESARROLLADORES*/
+
 @media (max-width: 1150px) {
   /* el valor anterior era 1320 */
   .first_information-section,
@@ -1385,6 +1386,10 @@ STYLE Cursor-Custom
   .img-section {
     margin: 10px 0px;
     width: 90%;
+  }
+
+  .projects{
+    width: 100%;
   }
 }
 
