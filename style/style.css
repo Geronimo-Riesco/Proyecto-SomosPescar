@@ -1599,7 +1599,7 @@ STYLE Cursor-Custom
 
   .img-section {
     width: 300px;
-    height: 300px;
+    height: 220px;
   }
 
   #title-firstSection,
@@ -1619,6 +1619,16 @@ STYLE Cursor-Custom
 
   #developers-section {
     width: 95%;
+  }
+
+  .developer-card{
+    width: 260px;
+    height: 260px;
+  }
+
+  #group-photo-artech{
+    width: 300px;
+    height: 190px;
   }
 
   .container-page {
