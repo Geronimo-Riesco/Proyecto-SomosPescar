@@ -1367,6 +1367,13 @@ STYLE Cursor-Custom
   margin: auto;
 }
 
+/* Para equilibrar el tamaño de las imagenes del scroll del HOME Mobile: */
+
+#sliderG figure img{
+  width: 1214px;
+  height: 750px;
+}
+
 /* RESPONSIVE DE DESARROLLADORES*/
 
 @media (max-width: 1150px) {
@@ -1914,6 +1921,13 @@ STYLE Cursor-Custom
   .card3 .card__description{
     margin-top: 20px;
   }
+
+  /* Para equilibrar el tamaño de las imagenes del scroll del HOME Mobile: */
+
+  #sliderG figure img{
+    width: 339px;
+    height: 215px;
+  }
 }
 
 /* Dropdown */
@@ -2001,4 +2015,8 @@ STYLE Cursor-Custom
   .nav-menu{
     z-index: 2;
   }
+}
+
+#foot p{
+  color: var(--color-white);
 }
