@@ -1985,4 +1985,10 @@ STYLE Cursor-Custom
     padding-bottom: 30px;
     padding-left: 17px;
   }
+
+  /* Superpongo el menú del mobile */
+
+  .nav-menu{
+    z-index: 2;
+  }
 }
