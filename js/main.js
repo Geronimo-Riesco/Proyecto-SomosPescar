@@ -309,6 +309,34 @@ function returnCards(jason, clase) {
       <div class="details">
       <h2 class="nombre"> ${valuesCard.nombre}  ${valuesCard.apellido} <br /><span>" ${valuesCard.rol}" </span></h2>
       <div class="card_btn">
+      
+      <a class="atext2" href="${valuesCard.linkedin}" target="_blank"
+        ><i class="texto">LinkedIn</i><img
+          src="../img/cardsGrupo/linkedin-icon.png"
+      /></a>
+    </div>
+  </div>
+</div>
+</div>
+`
+    )
+    .join("");
+}
+
+
+
+function returnCards2(jason, clase) {
+  return jason
+    .map(
+      (valuesCard, index) => `
+    <div class=\"card-grupo  ${clase}\">
+    <div class="imgBx">
+    <img src= ${valuesCard.foto} alt="${valuesCard.nombre}" />
+    </div>
+    <div class="content">
+      <div class="details">
+      <h2 class="nombre"> ${valuesCard.nombre}  ${valuesCard.apellido} <br /></h2>
+      <div class="card_btn">
       <a class="atext1" href="${valuesCard.github}" target="_blank"
         ><i class="texto" >GitHub</i><img src="../img/cardsGrupo/github-icon.png"
       /></a>
@@ -325,6 +353,8 @@ function returnCards(jason, clase) {
     .join("");
 }
 
+
+
 contenedor.innerHTML = returnCards(otrosDirectivos, "directivo1"); // carga las columnas de otros directivos
 
 let orientadora = document.querySelector(".orientadora"); // carga las columnas de la orientadora
@@ -335,4 +365,4 @@ orientadora.innerHTML = returnCards(jorientadora, "orientadora1");
 let estudiantes = document.querySelector(".estudiantes");
 let jestudiantes = Object.values(mjson.alumnos);
 
-estudiantes.innerHTML = returnCards(jestudiantes, "estudiantesCard");
+estudiantes.innerHTML = returnCards2(jestudiantes, "estudiantesCard");
