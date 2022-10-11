@@ -13,7 +13,7 @@
 
 ###### Link: https://geronimo-riesco.github.io/Proyecto-SomosPescar/
 
-###### Proyecto final by Fundación Pescar
+###### Proyecto Final by Fundación Pescar
 
 ###### `HOME`
 ![Proyecto-SomosPescar_index html](https://user-images.githubusercontent.com/83089714/185829630-1701d29c-18f7-419a-aa56-7c5028bb9a65.png)
