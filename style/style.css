@@ -1940,6 +1940,10 @@ STYLE Cursor-Custom
     width: 339px;
     height: 215px;
   }
+
+  .listslider{
+    margin-top: 470px ;
+  }
 }
 
 /* Dropdown */
