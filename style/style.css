@@ -1369,8 +1369,8 @@ STYLE Cursor-Custom
 
 /* Para equilibrar el tamaño de las imagenes del scroll del HOME Mobile: */
 
-#sliderG figure img{
-  width: 1214px;
+#sliderG{
+  width: 1200px;
   height: 750px;
 }
 
