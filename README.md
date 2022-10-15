@@ -11,7 +11,7 @@
 - Abraham Trenyan
 ```
 
-##### Link: https://geronimo-riesco.github.io/Proyecto-SomosPescar/
+###### Link: https://geronimo-riesco.github.io/Proyecto-SomosPescar/
 
 ###### Proyecto Final by Fundación Pescar
 
