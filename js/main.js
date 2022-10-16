@@ -262,15 +262,15 @@ consumo de json entre muchisimas comillas, por que si esto lo ven en artech me c
 let card = document.querySelector(".cardd");
 let nombre = document.querySelector(".nombre");
 let puesto = document.querySelector(".puesto");
-let gitHub = document.querySelector(".atext1");
+
 let linkedin = document.querySelector(".atext2");
 
 /*console.log(card, nombre.innerHTML)*/
 
 let directora = Object.values(mjson.directora);
-
+/*card-grupo card-grupo1 here here*/
 let populate = (arr) => {
-  let git = gitHub.href;
+  
   let linked = linkedin.href;
 
   for (var i = 0; i < arr.length; i++) {
@@ -278,7 +278,7 @@ let populate = (arr) => {
 
     nombre.innerHTML = `${arr[0]} ${arr[1]}`;
     linkedin.href = `${arr[3]}`;
-    /* git = `${arr[4]}`;*/
+    
   }
 };
 
