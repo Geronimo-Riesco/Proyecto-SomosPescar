@@ -145,22 +145,19 @@ ul {
 .cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2rem;
-  margin: 4rem 5vw;
-  padding: 0;
   list-style-type: none;
-  margin: 10px -10px;
+  justify-items: center;
+  gap: 40px;
 }
 
 .card {
   position: relative;
   display: block;
-  height: 100%;
   border-radius: calc(var(--curve) * 1px);
   overflow: hidden;
   text-decoration: none;
-  width: 390px;
-  height: 305px;
+  width: 380px;
+  height: 315px;
 }
 
 .card__image {
@@ -176,7 +173,7 @@ ul {
   border-radius: calc(var(--curve) * 1px);
   background-color: var(--color-orange1);
   transform: translateY(100%);
-  transition: .2s ease-in-out;
+  transition: 0.2s ease-in-out;
 }
 
 .card:hover .card__overlay {
@@ -194,7 +191,7 @@ ul {
   border-radius: calc(var(--curve) * 1px) 0 0 0;
   background-color: var(--color-orange1);
   transform: translateY(-100%);
-  transition: .2s ease-in-out;
+  transition: 0.2s ease-in-out;
 }
 
 .card:hover .card__header {
@@ -203,11 +200,10 @@ ul {
 
 .card__title {
   font-size: 1rem;
-  margin: 0 0 .3em;
+  margin: 0 0 0.3em;
   color: var(--color-white);
   text-align: center;
 }
-
 
 .card__description {
   padding: 0 2em 2em;
@@ -223,25 +219,30 @@ ul {
   text-align: center;
 }
 
-.card1 .card__description{
+.card1 .card__description {
   font-size: 1rem;
 }
 
-.card2 .card__description{
+.card2 .card__description {
   font-size: 0.9rem;
 }
 
-.card3 .card__description{
+.card3 .card__description {
   font-size: 0.87rem;
 }
 
 .card1:hover .card__overlay,
 .card2:hover .card__overlay,
-.card3:hover .card__overlay{
+.card3:hover .card__overlay {
   height: 100%;
 }
 
 /* ----------------- SCROLL FOTOS --------------------------------------------------------------- */
+.scroll-nosotros {
+  display: flex;
+  justify-content: center;
+}
+
 #sliderG {
   overflow: hidden;
   width: 100%;
@@ -1371,8 +1372,8 @@ max-width: 100vw;
 
 /* Para equilibrar el tamaño de las imagenes del scroll del HOME Mobile: */
 
-#sliderG figure img{
-  width: 1214px;
+#sliderG {
+  width: 1200px;
   height: 750px;
 }
 
@@ -1397,7 +1398,7 @@ max-width: 100vw;
     width: 90%;
   }
 
-  .projects{
+  .projects {
     width: 100%;
   }
 }
@@ -1501,29 +1502,28 @@ max-width: 100vw;
     width: 100%;
   }
 }
-  /* ----------------COMO INGRESAR ------------------------*/
+/* ----------------COMO INGRESAR ------------------------*/
 
 #bodyCI {
   overflow-x: visible;
 }
 
-   #ci-section {
-    display: flex;
-  }
+#ci-section {
+  display: flex;
+}
 
-  #ci-preguntas {
-    width: auto;
-    margin: 50px;
-    text-align: center;
-   } 
-  
+#ci-preguntas {
+  width: auto;
+  margin: 50px;
+  text-align: center;
+}
 
-  #ci-perfil { 
-    background-color: #ececec;
-    padding: 30px;
-    margin:20px 0;
-  }
-  
+#ci-perfil {
+  background-color: #ececec;
+  padding: 30px;
+  margin: 20px 0;
+}
+
 .img-ci-perfil {
   width: 70%;
   border-radius: 50%;
@@ -1539,12 +1539,12 @@ max-width: 100vw;
 }
 .ci-preg-title {
   margin: 40px;
-  color:rgb(255, 141, 65);
+  color: rgb(255, 141, 65);
   font-size: 22px;
   font-weight: 900;
 }
 
-@media (max-width:1079.9px) {
+@media (max-width: 1079.9px) {
   /* #hombreCV {
     position:absolute;
     left:0px;
@@ -1562,38 +1562,30 @@ max-width: 100vw;
     width: auto;
   }
 }
-  @media (min-width: 1080px) {
-    .img-ci-perfil {
-      
-      position: absolute;
-      top: 140px;
-      right: 40px;
-    }
-    
-    .img-ci-perfil {
-      width: 200px;
-    }
-
-
-
-    
-    #ci-requisitos {
-      margin: 40px 400px 40px 40px;
-    }
+@media (min-width: 1080px) {
+  .img-ci-perfil {
+    position: absolute;
+    top: 140px;
+    right: 40px;
   }
 
-
-
-
-  
-  #ci-requisitos h2 {
-    font-size: 32px;
-    margin: 40px 0;
+  .img-ci-perfil {
+    width: 200px;
   }
-  
-  #ci-requisitos h4 {
-    margin: 50px 0;
+
+  #ci-requisitos {
+    margin: 40px 400px 40px 40px;
   }
+}
+
+#ci-requisitos h2 {
+  font-size: 32px;
+  margin: 40px 0;
+}
+
+#ci-requisitos h4 {
+  margin: 50px 0;
+}
 
 /* -------------------------------------- MOVÍL RESPONSIVE 400px -------------------------------------- */
 @media (max-width: 400px) {
@@ -1642,12 +1634,12 @@ max-width: 100vw;
     width: 95%;
   }
 
-  .developer-card{
+  .developer-card {
     width: 260px;
     height: 260px;
   }
 
-  #group-photo-artech{
+  #group-photo-artech {
     width: 300px;
     height: 190px;
   }
@@ -1663,8 +1655,6 @@ max-width: 100vw;
     width: 230px;
     height: 230px;
   }
-
-
 
   /* ------------------- Nuestro Grupo ------------------------- */
   .conteiner-cards {
@@ -1887,60 +1877,64 @@ max-width: 100vw;
 
   /* ------------------------ HOME CARDS RESPONSIVE -------------------------- */
 
-  .cards{
+  .cards {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
 
-  .card{
+  .card {
     height: 580px;
     width: 320px;
     margin-bottom: 20px;
   }
 
-  .card .card__title{
+  .card .card__title {
     font-size: 1.05rem;
   }
 
-  .card__overlay{
+  .card__overlay {
     height: 380px;
   }
 
-  .card1{
+  .card1 {
     height: 500px;
   }
 
-  .card1 .card__overlay{
+  .card1 .card__overlay {
     height: 320px;
   }
 
-  .card1 .card__header{
+  .card1 .card__header {
     height: 90px;
   }
 
-  .card1 .card__title{
+  .card1 .card__title {
     margin-top: -20px;
   }
 
-  .card1 .card__description{
+  .card1 .card__description {
     margin-bottom: 20px;
   }
 
-  .card3 .card__title{
+  .card3 .card__title {
     margin-top: 25px;
   }
 
-  .card3 .card__description{
+  .card3 .card__description {
     margin-top: 20px;
   }
 
   /* Para equilibrar el tamaño de las imagenes del scroll del HOME Mobile: */
 
-  #sliderG figure img{
-    width: 339px;
+  #sliderG figure img {
+    width: 337px;
     height: 215px;
+  }
+
+  .listslider {
+    margin-top: 470px;
   }
 }
 
@@ -2007,18 +2001,18 @@ max-width: 100vw;
 }
 
 @media (max-width: 400px) {
-  .dropdown .dropbtn{
+  .dropdown .dropbtn {
     color: var(--color-white);
     font-size: 15px;
     font-family: "Montserrat", sans-serif;
     letter-spacing: 2px;
   }
-  
-  .dropdown-content{
+
+  .dropdown-content {
     background-color: var(--color-orange1);
   }
 
-  #li_dropdown{
+  #li_dropdown {
     padding-top: 10px;
     padding-bottom: 30px;
     padding-left: 17px;
@@ -2026,11 +2020,11 @@ max-width: 100vw;
 
   /* Superpongo el menú del mobile */
 
-  .nav-menu{
+  .nav-menu {
     z-index: 2;
   }
 }
 
-#foot p{
+#foot p {
   color: var(--color-white);
 }
