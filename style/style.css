@@ -500,7 +500,8 @@ a {
 
 /* CENTRAMOS EL TITULO CONTACTO Y LOS PARRAFOS */
 .contact-details h3,
-.contact-details p {
+.contact-details p,
+.contact-details a {
   margin-bottom: 30px;
   text-align: center;
 }
@@ -990,10 +991,9 @@ STYLE Cursor-Custom
   top: 400px;
 }
 
-
 .estudiantes {
   margin-left: -40px;
-max-width: 100vw;
+  max-width: 100vw;
   grid-row-start: 4;
   grid-column-start: 1;
   grid-column-end: 5;
@@ -1596,7 +1596,7 @@ max-width: 100vw;
 
   /* -------------------- Desarrolladores --------------------- */
 
-  #information-title{
+  #information-title {
     margin-bottom: 0;
   }
 
@@ -1652,11 +1652,11 @@ max-width: 100vw;
     margin-top: 0;
   }
 
-  #dev-title{
+  #dev-title {
     margin: 25px 0 25px;
   }
 
-  #other-projects{
+  #other-projects {
     text-align: center;
   }
 
@@ -1744,6 +1744,7 @@ max-width: 100vw;
     margin-bottom: 34rem;
   }
 
+  /* ------------- HOME ----------- */
   .cursor {
     display: none;
   }
@@ -1842,6 +1843,11 @@ max-width: 100vw;
     font-size: 1.5rem;
   }
 
+  #sliderG {
+    width: 1200px;
+    height: 250px;
+  }
+
   #slider {
     min-height: 400px;
   }
@@ -1874,6 +1880,10 @@ max-width: 100vw;
 
   .contact-details {
     gap: 45px;
+  }
+
+  #contact {
+    margin-top: 200px;
   }
 
   /********************************************
@@ -1950,7 +1960,7 @@ max-width: 100vw;
   }
 
   .listslider {
-    margin-top: 470px;
+    margin-top: 500px;
   }
 }
 
