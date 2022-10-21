@@ -8,10 +8,9 @@
 - Iván Caravajal
 - Belen Jessikowski
 - Gerónimo Riesco
-- Abraham Trenyan
 ```
 
-#### Link: https://geronimo-riesco.github.io/Proyecto-SomosPescar/
+###### Link: https://geronimo-riesco.github.io/Proyecto-SomosPescar/
 
 ###### Proyecto Final by Fundación Pescar
 
@@ -20,3 +19,5 @@
 
 ###### `LA BECA`
 ![127 0 0 1_5500_pages_LaBeca html](https://user-images.githubusercontent.com/83089714/184554242-3dc582cf-1411-4d2c-82cd-f80a82391d06.png)
+
+#### `W3C Validation Service`

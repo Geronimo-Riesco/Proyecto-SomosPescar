@@ -500,7 +500,8 @@ a {
 
 /* CENTRAMOS EL TITULO CONTACTO Y LOS PARRAFOS */
 .contact-details h3,
-.contact-details p {
+.contact-details p,
+.contact-details a {
   margin-bottom: 30px;
   text-align: center;
 }
@@ -1590,7 +1591,7 @@ STYLE Cursor-Custom
 
   /* -------------------- Desarrolladores --------------------- */
 
-  #information-title{
+  #information-title {
     margin-bottom: 0;
   }
 
@@ -1646,11 +1647,11 @@ STYLE Cursor-Custom
     margin-top: 0;
   }
 
-  #dev-title{
+  #dev-title {
     margin: 25px 0 25px;
   }
 
-  #other-projects{
+  #other-projects {
     text-align: center;
   }
 
@@ -1738,6 +1739,7 @@ STYLE Cursor-Custom
     margin-bottom: 34rem;
   }
 
+  /* ------------- HOME ----------- */
   .cursor {
     display: none;
   }
@@ -1836,6 +1838,11 @@ STYLE Cursor-Custom
     font-size: 1.5rem;
   }
 
+  #sliderG {
+    width: 1200px;
+    height: 250px;
+  }
+
   #slider {
     min-height: 400px;
   }
@@ -1868,6 +1875,10 @@ STYLE Cursor-Custom
 
   .contact-details {
     gap: 45px;
+  }
+
+  #contact {
+    margin-top: 200px;
   }
 
   /********************************************
@@ -1944,7 +1955,7 @@ STYLE Cursor-Custom
   }
 
   .listslider {
-    margin-top: 470px;
+    margin-top: 500px;
   }
 }
 
