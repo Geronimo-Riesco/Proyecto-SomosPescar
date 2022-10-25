@@ -4,10 +4,18 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Nuestro grupo - cards</title>
+    <title>Somos Pescar</title>
+    <link rel="icon" href="../img/icono.png" type="image/png" />
     <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="../style/NuestroGrupo.css" />
   </head>
   <body>
@@ -15,46 +23,58 @@
       <i class="fas fa-bars fa-2x"></i>
     </div>
 
-    <header>
-      <nav class="header__nav-nuestroGrupo">
-        <img src="../img/icono.png" class="pescar-icon">
-        <ul class="nav-menu-ul">
-          <li>
-            <a href="../index.html" class="a-modified">HOME</a>
-          </li>
-          <li class="li-dropdown">
-            <div class="ul-dropdown">
-              <button class="ul-dropbtn" style="font-weight: 500; font-size: 17px;">
-                NOSOTROS
-                <i class="fa fa-caret-down"></i>
-              </button>
-              <div class="nav-dropdown-content">
-                <a href="../pages/Desarrolladores.html" style="border-bottom: none;">DESARROLLADORES</a>
-                <a href="../pages/NuestroGrupo.html" style="border-bottom: none;">NUESTRO GRUPO</a>
-                <a href="../pages/Agradecimientos.html" style="border-bottom: none;">AGRADECIMIENTOS</a>
-              </div>
-            </div>
-          </li>
-          <li>
-            <a href="../pages/ComoIngresar.html" class="a-modified">COMO INGRESAR</a>
-          </li>
-          <li>
-            <a href="../pages/LaBeca.html" class="a-modified">LA BECA</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
+    <main class="container">
+      <header id="nav-main">
+        <nav class="nav-bar">
+          <img
+            src="../img/icono.png"
+            alt="Fundación Pescar Logo"
+            class="nav-brand"
+          />
 
-    <main>
+          <ul class="nav-menu">
+            <li>
+              <a href="../index.html">HOME</a>
+            </li>
+            <li>
+              <div class="dropdown">
+                <button class="dropbtn">
+                  NOSOTROS
+                  <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                  <a href="../pages/Desarrolladores.html">DESARROLLADORES</a>
+                  <a href="../pages/NuestroGrupo.html">NUESTRO GRUPO</a>
+                  <a href="../pages/Agradecimientos.html">AGRADECIMIENTOS</a>
+                </div>
+              </div>
+            </li>
+            <li>
+              <a href="../pages/ComoIngresar.html">COMO INGRESAR</a>
+            </li>
+            <li>
+              <a href="../pages/LaBeca.html">LA BECA</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+
       <div id="card-directora"></div>
       <div id="cards-directivos"></div>
       <div id="card-orientadora"></div>
       <div id="cards-alumnos"></div>
     </main>
 
-    <footer id="footerNuestroGrupo">
-      Hecho con <i class="fa-solid fa-heart"></i> por egresados de Centro Pescar "Paths to the Future" JPM - Artech
+    <footer id="foot">
+      <p>
+        Hecho con <i class="fa-solid fa-heart"></i> por egresados de
+        <em>Centro Pescar "Paths to the Future" JPM - Artech </em>
+      </p>
     </footer>
+
+    <div class="cursor"></div>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="../js/main.js"></script>
     <script src="../js/NuestroGrupo.js"></script>
   </body>
 </html>

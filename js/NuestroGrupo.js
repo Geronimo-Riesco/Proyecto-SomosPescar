@@ -8,7 +8,8 @@ const personas = [
     nombre: "Silvia Rueda",
     apellido: "de Uranga",
     rol: "Directora de Pescar",
-    linkedin: "https://www.linkedin.com/in/silvia-uranga-1056675/?originalSubdomain=ar",
+    linkedin:
+      "https://www.linkedin.com/in/silvia-uranga-1056675/?originalSubdomain=ar",
     foto: "../img/individuales/silvina-uranga.jpg",
   },
   {
@@ -16,7 +17,8 @@ const personas = [
     nombre: "Marie",
     apellido: "Steverlynck",
     rol: "Coordinación de programas y RR. II.",
-    linkedin: "https://www.linkedin.com/in/marie-steverlynck-97a42b194/?trk=public_profile_browsemap_profile-result-card_result-card_full-click&originalSubdomain=ar",
+    linkedin:
+      "https://www.linkedin.com/in/marie-steverlynck-97a42b194/?trk=public_profile_browsemap_profile-result-card_result-card_full-click&originalSubdomain=ar",
     foto: "../img/individuales/marie-steverlynck.jpg",
   },
   {
@@ -24,7 +26,8 @@ const personas = [
     nombre: "Carolina",
     apellido: "Bianchetti",
     rol: "Intermediación laboral y red de egresados",
-    linkedin: "https://www.linkedin.com/in/carolina-bianchetti-88745a70/?originalSubdomain=ar",
+    linkedin:
+      "https://www.linkedin.com/in/carolina-bianchetti-88745a70/?originalSubdomain=ar",
     foto: "../img/individuales/carolina-bianchetti.jpg",
   },
   {
@@ -32,7 +35,8 @@ const personas = [
     nombre: "Florencia",
     apellido: "Cocorullo",
     rol: "Coordinación de programas y Líder de Capacitación",
-    linkedin: "https://www.linkedin.com/in/florencia-cocorullo-8086ab92/?originalSubdomain=ar",
+    linkedin:
+      "https://www.linkedin.com/in/florencia-cocorullo-8086ab92/?originalSubdomain=ar",
     foto: "../img/individuales/florencia-cocorullo.jpg",
   },
 
@@ -41,7 +45,8 @@ const personas = [
     nombre: "Paola",
     apellido: "Trippichio",
     rol: "Orientadora del equipo",
-    linkedin: "https://www.linkedin.com/in/paola-tripicchio-2bb59122/?originalSubdomain=ar",
+    linkedin:
+      "https://www.linkedin.com/in/paola-tripicchio-2bb59122/?originalSubdomain=ar",
     foto: "../img/individuales/paola-trippichio.jpg",
   },
   {
@@ -290,9 +295,9 @@ function Card() {
         `;
       cardDirectora.appendChild(card);
     } else if (persona.id > 0 && persona.id < 4) {
-        const card = document.createElement("div");
-        card.className = `card-directivo${index}`;
-        card.innerHTML = `
+      const card = document.createElement("div");
+      card.className = `card-directivo${index}`;
+      card.innerHTML = `
           <div class="card">
             <div class="img-persona">
               <img src="${persona.foto}">
@@ -307,11 +312,11 @@ function Card() {
             </div>
           </div>
           `;
-        cardsDirectivos.appendChild(card);
+      cardsDirectivos.appendChild(card);
     } else if (persona.id === 4) {
-        const card = document.createElement("div");
-        card.className = `card-orientadora`;
-        card.innerHTML = `
+      const card = document.createElement("div");
+      card.className = `card-orientadora`;
+      card.innerHTML = `
           <div class="card">
             <div class="img-persona">
               <img src="${persona.foto}">
@@ -326,11 +331,11 @@ function Card() {
             </div>
           </div>
           `;
-        cardOrientadora.appendChild(card);
+      cardOrientadora.appendChild(card);
     } else {
-        const card = document.createElement("div");
-        card.className = `card-alumno${index}`;
-        card.innerHTML = `
+      const card = document.createElement("div");
+      card.className = `card-alumno${index}`;
+      card.innerHTML = `
           <div class="card">
             <div class="img-persona">
               <img src="${persona.foto}">
@@ -349,9 +354,27 @@ function Card() {
             </div>
           </div>
           `;
-        cardAlumnos.appendChild(card);
+      cardAlumnos.appendChild(card);
     }
   });
 }
+
+/********************************************
+JS Cursor-Custom
+*********************************************/
+
+var cursorinner = document.querySelector(".cursor");
+document.addEventListener("mousemove", function (e) {
+  var x = e.clientX;
+  var y = e.clientY;
+  cursorinner.style.left = x + "px";
+  cursorinner.style.top = y + "px";
+});
+document.addEventListener("mousedown", function () {
+  cursorinner.classList.add("cursorinnerhover");
+});
+document.addEventListener("mouseup", function () {
+  cursorinner.classList.remove("cursorinnerhover");
+});
 
 Card();
