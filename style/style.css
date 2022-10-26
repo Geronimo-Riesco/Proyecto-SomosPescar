@@ -1331,7 +1331,7 @@ STYLE Cursor-Custom
 }
 
 .img-ci-perfil {
-  width: 70%;
+  width: 60vw;
   border-radius: 50%;
 }
 
@@ -1384,7 +1384,7 @@ STYLE Cursor-Custom
   }
 
   #ci-preguntas { 
-    width: 30%;
+    width: 40vw;
   }
 }
 
