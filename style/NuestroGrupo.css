@@ -1,146 +1,128 @@
-/*
-@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
-*/
-
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,300;1,400&family=Poppins:wght@300;400;500&family=Roboto+Slab:wght@300;500&family=Roboto:ital,wght@0,400;1,300;1,400&display=swap');
-
+/* Global */
 * {
+  cursor: none;
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
-  font-weight: 400;
 }
 
-.menu-btn {
-  cursor: pointer;
-  position: absolute;
-  top: 25px;
-  right: 36px;
-  display: none;
+:root {
+  --curve: 40;
+  --color-white: #ffffff;
+  --color-black: #000000;
+  --color-purple: #6b4060;
+  --color-orange1: #fb7304;
+  --color-orange2: rgb(255, 141, 65);
+  --color-orange3: #ff3450;
+  --color-blue: #1f2d8d;
+  --color-lightgray: #eee;
+  --color-darkgray: rgb(83, 83, 83);
+  --color-box-shadow: rgba(0, 0, 0, 0.1);
 }
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: var(--color-white);
+  color: var(--color-black);
+  font-size: 16px;
+  letter-spacing: 2px;
+}
+
+/********************************************
+STYLE Cursor-Custom
+*********************************************/
+.cursor {
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  background-color: var(--color-blue);
+  opacity: 0.6;
+  position: fixed;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  transition: width 0.3s, height 0.3s, opacity 0.3s;
+  z-index: 9999;
+}
+
+.cursorinnerhover {
+  width: 30px;
+  height: 30px;
+  opacity: 0.4;
+}
+
+/* ScrollBar */
 
 ::-webkit-scrollbar {
   width: 15px;
 }
 
 ::-webkit-scrollbar-track {
-  background: rgba(0, 0, 0, 0.1);
+  background: var(--color-box-shadow);
   border-radius: 15px;
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #fb7304;;
+  background-color: var(--color-orange1);
   border-radius: 16px;
 }
 
-header {
-  margin: 10px 50px;
+/* CADA ETIQUETA DEL MENU LAS QUIERO CON COLOR BLANCO*/
+a {
+  color: var(--color-black);
+  text-decoration: none;
+  font-weight: bold;
 }
 
-.header__nav-nuestroGrupo {
+/* MIS ETIQUETAS DEL MENU LE SACO LOS ESTILOS QUE PUEDAN TENER*/
+ul {
+  list-style: none;
+}
+
+/* MI CONTENER DE TODA LA PAGINA WEB LA POSICIONO*/
+.container {
+  width: 90%;
+  margin: auto;
+}
+
+/* LOGO ICONO MENU*/
+.nav-brand {
+  width: 75px;
+}
+
+/* NAVEGACIÓN */
+.nav-bar {
+  font-size: 14px;
   display: flex;
   align-items: center;
   height: 80px;
   padding: 20px 0;
-  font-size: 14px;
-  overflow: hidden;
-  /* background-color: #333; */
 }
 
-.header__nav-nuestroGrupo a{
-  float: left;
-  color: #333;
-  text-align: center;
-  padding: 0px 16px;
-  text-decoration: none;
-  transition: ease-in-out .2s;
-}
-
-.li-dropdown{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: ease-in-out .2s;
-}
-
-.ul-dropdown .ul-dropbtn {
-  font-size: 16px;
-  font-weight: bold;
-  border: none;
-  outline: none;
-  padding: 0px 17px;
-  background-color: inherit;
-  font-family: inherit;
-  margin: 0;
-}
-
-.header__nav-nuestroGrupo a:hover,
-.ul-dropdown:hover .ul-dropbtn {
-  color: rgb(255, 77, 7);
-}
-
-.nav-dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1;
-}
-
-.nav-dropdown-content a {
-  float: none;
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  text-align: left;
-}
-
-.nav-dropdown-content a:hover {
-  background-color: #ddd;
-}
-
-.ul-dropdown:hover .nav-dropdown-content {
-  display: block;
-}
-
-.pescar-icon {
-  width: 75px;
-}
-
-.nav-menu-ul {
+/* NAVEGACIÓN IZQUIERDA */
+.nav-bar ul {
   display: flex;
   justify-content: flex-end;
   flex: 1;
 }
 
-.nav-menu-ul li{
-  font-size: 1.1rem;
-  list-style: none;
+/* NAVEGACIÓN DERECHA LE DOY UN ESPACIO ENTRE CADA ETIQUETAS */
+.nav-bar ul li a {
+  padding: 15px;
 }
 
-.nav-menu-ul li a{
-  padding: 20px;
-  text-decoration: none;
-  color: black;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: bold;
-  font-size: 16px;
-  transition: ease-in-out .2s;
+/* NAVEGACIÓN DERECHA LE DOY UN ESTILO A CADA ETIQUETA */
+.nav-bar ul li a:hover {
+  border-bottom: 3px solid var(--color-purple);
+  color: var(--color-purple);
 }
 
-.nav-menu-ul li a,
-.li-dropdown{
-  border-bottom: 3px solid white;
-  color: #6b4060;
-}
-
-.nav-menu-ul li a:hover,
-.li-dropdown:hover{
-  border-bottom: 3px solid #6b4060;
-  color: #6b4060;
+/* BOTON RESPONSIVE */
+.menu-btn {
+  cursor: pointer;
+  position: absolute;
+  top: 25px;
+  right: 36px;
+  display: none;
 }
 
 #card-directora,
@@ -240,33 +222,42 @@ header {
   margin: 0 5px;
 }
 
-#footerNuestroGrupo {
-  background-color: rgb(255, 141, 65);
-  text-align: center;
+/*----------------*/
+#foot {
   padding-block: 15px;
-  color: white;
+  text-align: center;
+  background-color: rgb(255, 141, 65);
+  bottom: 0;
+  width: 100%;
 }
+/*----------------*/
 
 @media (max-width: 400px) {
+  .cursor {
+    display: none;
+  }
+
   .menu-btn {
     color: var(--color-blue);
     display: block;
   }
 
+  /* LE DOY UN EFECTO A MI BOTÓN MENÚ */
   .menu-btn:hover {
     opacity: 0.5;
   }
 
-  .header__nav-nuestroGrupo ul li a {
+  .nav-bar ul li a {
     color: var(--color-white);
   }
 
-  .header__nav-nuestroGrupo ul li a:hover {
+  .nav-bar ul li a:hover {
     border-bottom: 2px solid var(--color-orange1);
     color: var(--color-orange1);
   }
 
-  .header__nav-nuestroGrupo ul.nav-menu-ul {
+  /* MEJORO MI NAVEGACION EN EL MENÚ */
+  .nav-bar ul.nav-menu {
     display: block;
     position: absolute;
     top: 0;
@@ -278,63 +269,22 @@ header {
     opacity: 0.9;
     transform: translateX(-400px);
     transition: transform 0.5s ease-in-out;
-    background-color: blue;
   }
 
   /* CORRIGO MI LETRA Y TAMAÑO DEL MENÚ */
-  .header__nav-nuestroGrupo ul.nav-menu-ul li {
+  .nav-bar ul.nav-menu li {
     padding: 20px;
     font-size: 15px;
   }
-  
+
   /* QUE SE AMPLIE MI MENÚ CON LA ITERACCIÓN CON JS */
-  .header__nav-nuestroGrupo ul.nav-menu-ul.show {
+  .nav-bar ul.nav-menu.show {
     transform: translateX(-20px);
   }
 
-  .ul-dropdown .ul-dropbtn {
-    color: var(--color-white);
-    font-size: 15px;
-    font-family: "Montserrat", sans-serif;
-    letter-spacing: 2px;
-  }
-
-  .nav-dropdown-content {
-    background-color: var(--color-orange1);
-  }
-
-  #li_dropdown {
-    padding-top: 10px;
-    padding-bottom: 30px;
-    padding-left: 17px;
-  }
-
-  /* Superpongo el menú del mobile */
-
-  .nav-menu {
-    z-index: 2;
-  }
-
-  .li-dropdown{
-    margin-left: -100px;
-  }
-
-  .nav-menu-ul li{
-    display: flex;
-    flex-direction: column;
-    margin: auto;
-    border-bottom: none;
-    color: white;
-  }
-
-  .nav-menu-ul li .a-modified{
-    border-bottom: none;
-    padding: 10px;
-  }
-
-  .nav-dropdown-content a{
-    background-color: white;
-    color: rgb(255, 141, 65);
+  /* SEPARO MI LUPA DEL ICONO MENÚ */
+  .nav-bar ul.nav-menu-right {
+    margin-left: 36rem;
   }
 
   #card-directora,
@@ -372,3 +322,93 @@ header {
   }
 }
 
+/* Dropdown */
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.navbar a {
+  float: left;
+  color: #333;
+  text-align: center;
+  padding: 0px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  outline: none;
+  color: #333;
+  padding: 0px 17px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover,
+.dropdown:hover .dropbtn {
+  color: rgb(255, 77, 7);
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+@media (max-width: 400px) {
+  .dropdown .dropbtn {
+    color: var(--color-white);
+    font-size: 15px;
+    font-family: "Montserrat", sans-serif;
+    letter-spacing: 2px;
+  }
+
+  .dropdown-content {
+    background-color: var(--color-orange1);
+  }
+
+  #li_dropdown {
+    padding-top: 10px;
+    padding-bottom: 30px;
+    padding-left: 17px;
+  }
+
+  /* Superpongo el menú del mobile */
+
+  .nav-menu {
+    z-index: 2;
+  }
+}
+
+#foot p {
+  color: var(--color-white);
+}

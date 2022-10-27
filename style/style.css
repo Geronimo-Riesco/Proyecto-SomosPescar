@@ -827,195 +827,6 @@ STYLE Cursor-Custom
   opacity: 0.4;
 }
 
-/* ------------------------ Nuestro Equipo -------------------------- */
-
-.conteiner-cards {
-  display: grid;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 10px;
-  justify-content: center;
-  align-items: center;
-  height: 11vh;
-  min-width: 90vw;
-}
-
-.card-grupo {
-  position: relative;
-  width: 350px;
-  height: 450px;
-  background: #fff;
-  border-radius: 20px;
-  box-shadow: 0 35px 80px rgba(69, 69, 69, 0.15);
-  top: 300px;
-}
-
-.imgBx {
-  float: left;
-  margin-top: -50px;
-  margin-left: 50%;
-  transform: translateX(-50%);
-  width: 200px;
-  height: 200px;
-  background: rgb(126, 126, 126);
-  border-radius: 20px;
-  overflow: hidden;
-  margin-bottom: 100px;
-}
-
-.imgBx img {
-  position: absolute;
-  top: -100;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  margin-bottom: 100px;
-}
-
-.card-grupo .content {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
-}
-
-.card-grupo .content .details {
-  padding: 40px;
-  text-align: center;
-  width: 100%;
-  margin-top: 150px;
-}
-
-.card-grupo .content .details h2 {
-  font-size: 1.25em;
-  font-weight: 600;
-  color: #555;
-  line-height: 1.2em;
-}
-
-.card-grupo .content .details h2 span {
-  font-size: 0.75em;
-  font-weight: 500;
-  opacity: 0.5;
-}
-
-.card_btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100px;
-  display: flex;
-  justify-content: space-evenly;
-}
-
-.card_btn a {
-  text-decoration: none;
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  width: 130px;
-  padding: 8px 8px;
-  line-height: 30px;
-  border-radius: 10px;
-  background: #171515;
-  color: #fff;
-  margin: 10px;
-  margin-bottom: -35px;
-  box-shadow: 0.5rem 0.5rem 1rem rgb(158, 157, 157), -0.5rem -0.5rem 1rem #fff;
-}
-
-.card_btn a img {
-  width: 22px;
-}
-
-.card_btn a:nth-child(2) img {
-  width: 22px;
-}
-
-.card_btn a:nth-child(2) {
-  background: #0e77b5;
-  color: white;
-  padding: 8px 8px;
-}
-
-.atext::before {
-  width: 100%;
-}
-
-.atext1 .atext2 {
-  padding: 10%;
-}
-
-.card-grupo1 {
-  /* ubicacion de la card de la directora*/
-  margin-left: 50px;
-
-  top: 200px;
-  grid-row-start: 1;
-  grid-column-start: 2;
-}
-
-/* ubicacion de la card de los otros directivos*/
-
-.directivos {
-  top: 100px;
-  justify-content: center;
-  align-items: center;
-  margin-left: 80px;
-  grid-row-start: 2;
-  grid-column-start: 1;
-  grid-column-end: 5;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-}
-
-.orientadora {
-  margin-left: 75px;
-  /*grid-gap: 1vw; */
-  justify-content: center;
-  align-items: center;
-  grid-row-start: 3;
-  grid-column-start: 1;
-  grid-column-end: 4;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-}
-
-.orientadora1 {
-  grid-column-start: 2;
-  grid-row-start: 1;
-  top: 400px;
-}
-.estudiantes {
-  margin-left: -40px;
-
-  grid-row-start: 4;
-  grid-column-start: 1;
-  grid-column-end: 5;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-
-  grid-gap: 80px 15px;
-}
-
-.estudiantesCard {
-  top: 500px;
-}
-
-#auxiliarFooter {
-  margin-bottom: 342rem;
-}
-
-#footer-NuestroGrupo {
-  padding-block: 15px;
-  text-align: center;
-  background-color: var(--color-orange1);
-}
-
 /* -------------------------------------- Desarrolladores -------------------------------------- */
 
 /* CONTENEDOR */
@@ -1520,7 +1331,7 @@ STYLE Cursor-Custom
 }
 
 .img-ci-perfil {
-  width: 70%;
+  width: 60vw;
   border-radius: 50%;
 }
 
@@ -1571,6 +1382,10 @@ STYLE Cursor-Custom
   #ci-requisitos {
     margin: 40px 400px 40px 40px;
   }
+
+  #ci-preguntas { 
+    width: 40vw;
+  }
 }
 
 #ci-requisitos h2 {
@@ -1581,6 +1396,8 @@ STYLE Cursor-Custom
 #ci-requisitos h4 {
   margin: 50px 0;
 }
+
+
 
 /* -------------------------------------- MOVÍL RESPONSIVE 400px -------------------------------------- */
 @media (max-width: 400px) {
@@ -1665,78 +1482,6 @@ STYLE Cursor-Custom
   .proyecto-maskoteando {
     width: 230px;
     height: 230px;
-  }
-
-  /* ------------------- Nuestro Grupo ------------------------- */
-  .conteiner-cards {
-    display: inline;
-    height: 12vh;
-    width: 200px;
-  }
-
-  .texto {
-    display: none;
-  }
-  .nombre {
-    margin-top: 150px;
-    color: black;
-    height: 1px;
-  }
-  h2 span {
-    display: none;
-  }
-
-  .card-grupo {
-    height: 250px;
-    width: 350px;
-  }
-
-  .card_btn {
-    margin-bottom: 150px;
-  }
-
-  /* card de la directora */
-
-  .card-grupo1 {
-    margin-top: -150px;
-    margin-left: -5px;
-  }
-
-  /* contenedor de los directivos*/
-
-  .imgBx {
-    width: 120px;
-    height: 120px;
-  }
-  .directivos {
-    display: flex;
-    flex-direction: column;
-
-    gap: 30px;
-    gap: 45px;
-    margin-left: -15px;
-    top: 150px;
-  }
-
-  /*  card de la orientadora*/
-
-  .orientadora {
-    display: flex;
-    flex-direction: column;
-    margin-right: 75px;
-  }
-
-  .estudiantes {
-    display: flex;
-    flex-direction: column;
-
-    gap: 30px;
-    margin-top: -40px;
-    margin-left: -5px;
-  }
-
-  #auxiliarFooter {
-    margin-bottom: 34rem;
   }
 
   /* ------------- HOME ----------- */
