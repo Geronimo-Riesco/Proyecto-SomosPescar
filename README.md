@@ -9,7 +9,7 @@
 - Belen Jessikowski
 - Gerónimo Riesco
 ```
-###### Link: https://geronimo-riesco.github.io/Proyecto-SomosPescar/
+#### Link: https://geronimo-riesco.github.io/Proyecto-SomosPescar/
 
 ###### Proyecto Final by Fundación Pescar
 
