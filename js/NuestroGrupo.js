@@ -264,7 +264,7 @@ const personas = [
     rol: "Alumn@ - Desarrollad@r Full Stack",
     github: "https://github.com/SamplerDev",
     linkedin: "https://www.linkedin.com/in/ezequiel-villalba/",
-    foto: "../img/individuales/sin-foto.jpg",
+    foto: "../img/individuales/Ezequiel-Villalba.jpg",
   },
 ];
 
