@@ -1384,7 +1384,7 @@ STYLE Cursor-Custom
     margin: 40px 400px 40px 40px;
   }
 
-  #ci-preguntas { 
+  #ci-preguntas {
     width: 40vw;
   }
 }
@@ -1397,8 +1397,6 @@ STYLE Cursor-Custom
 #ci-requisitos h4 {
   margin: 50px 0;
 }
-
-
 
 /* -------------------------------------- MOVÍL RESPONSIVE 400px -------------------------------------- */
 @media (max-width: 400px) {
@@ -1624,7 +1622,8 @@ STYLE Cursor-Custom
   }
 
   #contact {
-    margin-top: 200px;
+    margin-top: 400px;
+    margin-bottom: -20px;
   }
 
   /********************************************
@@ -1789,6 +1788,10 @@ STYLE Cursor-Custom
 
   .nav-menu {
     z-index: 2;
+  }
+
+  .listslider {
+    margin-top: 700px;
   }
 }
 
