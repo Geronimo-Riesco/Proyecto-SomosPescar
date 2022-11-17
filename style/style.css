@@ -1390,7 +1390,7 @@ STYLE Cursor-Custom
   }
 
   #ci-preguntas {
-    width: 40vw;
+    width: 100vw;
   }
 }
 
@@ -1401,6 +1401,17 @@ STYLE Cursor-Custom
 
 #ci-requisitos h4 {
   margin: 50px 0;
+}
+
+.ci-gif{
+  height: 500px;
+  width: 100%;
+  margin: auto;
+}
+
+.ci-gif img{
+  height: 100%;
+  width: 100%;
 }
 
 /* -------------------------------------- MOVÍL RESPONSIVE 400px -------------------------------------- */
@@ -1797,6 +1808,11 @@ STYLE Cursor-Custom
 
   .listslider {
     margin-top: 700px;
+  }
+
+  .ci-gif{
+    height: 300px;
+    margin-top: 20px;
   }
 }
 
