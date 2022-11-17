@@ -865,11 +865,10 @@ STYLE Cursor-Custom
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  margin: 25px 10px;
+  margin: 10px 10px;
 }
 
 .section-information {
-  width: 500px;
   /* background-color: gray; */
   display: flex;
   flex-direction: column;
@@ -878,7 +877,7 @@ STYLE Cursor-Custom
 }
 
 .img-section {
-  width: 600px;
+  width: 700px;
   height: 400px;
   background-color: #eee;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.7);
@@ -896,11 +895,15 @@ STYLE Cursor-Custom
 }
 
 .inf-section-p {
-  margin: 10px 0;
   background-color: white;
-  width: 500px;
-  margin: 40px 0;
-  text-align: center;
+  width: 450px;
+  margin: 40px 10px 40px 0;
+  text-align: start;
+}
+
+.second_information-section .inf-section-p{
+  margin: 40px 0 40px 10px;
+  text-align: end;
 }
 
 #dev-title {
@@ -981,6 +984,7 @@ STYLE Cursor-Custom
 
 .areaE {
   grid-area: e;
+  object-fit: contain;
 }
 
 .areaF {
@@ -1007,8 +1011,8 @@ STYLE Cursor-Custom
 }
 
 #group-photo-artech {
-  width: 1000px;
-  height: 400px;
+  width: 100vw;
+  height: 550px;
   margin: 15px 0;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
@@ -1124,9 +1128,10 @@ STYLE Cursor-Custom
 
 .projects-a-title-logo #skinki_logo {
   width: 100px;
-  height: 100px;
+  height: 80px;
   border-radius: 20px;
   margin-bottom: 15px;
+  object-fit: fill;
 }
 
 /* MASKOTEANDO */
@@ -1415,23 +1420,19 @@ STYLE Cursor-Custom
 
   .first_information-section {
     width: 95%;
-    height: 600px;
   }
 
   .second_information-section {
     width: 95%;
-    height: 600px;
     margin-top: 0;
   }
 
   .section-information {
     width: 300px;
-    height: 300px;
   }
 
   .img-section {
     width: 300px;
-    height: 220px;
   }
 
   #title-firstSection,
@@ -1441,6 +1442,10 @@ STYLE Cursor-Custom
 
   .inf-section-p {
     width: 270px;
+    text-align: center;
+  }
+
+  .second_information-section .inf-section-p{
     text-align: center;
   }
 
@@ -1460,8 +1465,8 @@ STYLE Cursor-Custom
   }
 
   #group-photo-artech {
-    width: 300px;
-    height: 145px;
+    width: 100vw;
+    height: 170px;
     margin-top: 0;
   }
 
