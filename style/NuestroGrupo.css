@@ -407,6 +407,36 @@ ul {
   .nav-menu {
     z-index: 2;
   }
+
+  .link-github,
+  .link-linkedin{
+    padding: 7px;
+    font-size: .9rem;
+  }
+}
+
+.card,
+.link-github,
+.link-linkedin{
+  transition: all .3s;
+}
+
+.card:hover{
+  transform: translate(10px, -10px);
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.3);
+}
+
+.link-github:hover,
+.link-linkedin:hover{
+  opacity: 0.65;
+}
+
+.card-alumno17 h2{
+  font-size: 0.95rem;
+}
+
+.card-alumno17 span{
+  margin-top: 10px;
 }
 
 #foot p {
